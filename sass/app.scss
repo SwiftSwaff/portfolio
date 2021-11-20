@@ -1,0 +1,117 @@
+@import './_responsive';
+@import './_fonts';
+@import './_themes';
+@import './_nav';
+@import './_hero';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scrollbar-width: thin;
+    scrollbar-color: $scrollbar_fg_color $scrollbar_bg_color;
+
+    &::-webkit-scrollbar {
+        width: 12px;
+    }
+
+    &::-webkit-scrollbar-track {
+        background: $scrollbar_bg_color;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: $scrollbar_fg_color;
+        border-radius: 20px;
+        border: 3px solid $scrollbar_bg_color;
+    }
+}
+
+html {
+    height: 100%;
+    font-size: 16px;
+}
+
+body {
+    position: relative;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    height: inherit;
+    min-height: 100%;
+    background-color: $body_bg_color;
+}
+
+header {
+    flex: 0 0 100%;
+    order: 1;
+    position: fixed;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    background-color: $header_bg_color;
+    z-index: 2;
+}
+
+main {
+    flex: 0 1 100%;
+    order: 2;
+    min-height: calc(100% - 440px);
+    margin-top: 100px;
+    padding: 15px;
+    background-color: $main_bg_color;
+
+    section {
+        width: 100%;
+        padding: 15px;
+        font-family: $montserrat, sans-serif;
+        color: $primary_text_color;
+        
+        @include for-tablet-portrait-only {
+            width: 600px;
+            margin: 0 auto;
+            padding: 50px;
+        }
+        @include for-tablet-landscape-up {
+            width: 900px;
+            margin: 0 auto;
+        }
+        
+        h1 {
+            margin: 25px 0;
+            line-height: 30px;
+            font-size: 1rem;
+
+            @include for-tablet-portrait-up {
+                font-size: 3rem;
+                line-height: 20px;
+            }
+        }
+
+        p {
+            margin: 15px 0;
+            line-height: 16px;
+            font-size: 0.75rem;
+    
+            @include for-tablet-portrait-up {
+                font-size: 1rem;
+                line-height: 20px;
+            }
+        }
+    }
+}
+
+aside {
+    flex: 0 1 300px;
+    order: 3;
+    background-color: $aside_bg_color;
+}
+
+footer {
+    flex: 0 0 100%;
+    order: 4;
+    height: 100px;
+    margin-top: 20px;
+    background-color: $footer_bg_color;
+}

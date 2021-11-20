@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<databases>
+    <current-env>development</current-env>
+    <development-database>
+        <host>localhost</host>
+        <user>root</user>
+        <pass></pass>
+        <name>league</name>
+    </development-database>
+    <live-database>
+        <host>localhost</host>
+        <user>swifidbq_web</user>
+        <pass>n/wm8XLSqxjzm-.7VDCJ{e</pass>
+        <name>swifidbq_League</name>
+    </live-database>
+</databases>

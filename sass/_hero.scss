@@ -1,0 +1,54 @@
+.hero-image {
+    flex: 0 0 100%;
+    position: relative;
+    display: block;
+    height: 45%;
+    margin-top: 60px;
+    background-image: linear-gradient($hero_img_overlay_color, $hero_img_overlay_color), url("../resources/images/hero-image.jpeg");
+    background-position: 30%;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @include for-tablet-landscape-up {
+        height: 90%;
+    }
+
+    .hero-overlay {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        float: right;
+        width: 100%;
+        height: 100%;
+        padding-bottom: 200px;
+        text-align: center;
+        background: linear-gradient($hero_text_bg_color, $hero_img_overlay_color);
+        font-family: $lato, sans-serif;
+
+        h1 {
+            margin-bottom: 10px;
+            font-size: 1.5em;
+            text-align: center;
+            letter-spacing: 0.75rem;
+            color: $hero_text_heading_color;
+        }
+        span {
+            font-size: 0.8em;
+            font-style: italic;
+            color: $hero_text_subheading_color;
+        }
+
+        @include for-tablet-portrait-up {
+            width: 36rem;
+            padding-bottom: 0;
+
+            h1 {
+                font-size: 3em;
+                letter-spacing: 1rem;
+            }
+            span {
+                font-size: 1em;
+            }
+        }
+    }
+}
