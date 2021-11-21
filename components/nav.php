@@ -1,3 +1,9 @@
+<?php
+if (!defined('IndexAccessed')) {
+    die('Direct access not permitted');
+}
+?>
+
 <nav class='navbar'>
     <button name='navbar-ham' aria-label='Dropdown Menu' class='navbar-ham'>
         <svg viewBox="0 0 26 26" width="26" height="26">

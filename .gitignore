@@ -1,2 +1,4 @@
 init-sass.ps1
 /resources/uploads/*
+/css/app.css
+/css/app.css.map

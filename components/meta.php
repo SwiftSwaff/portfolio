@@ -1,3 +1,9 @@
+<?php
+if (!defined('IndexAccessed')) {
+    die('Direct access not permitted');
+}
+?>
+
 <title>SwiftSwaff</title>
 <meta name="description" content="Welcome to my Portfolio website. Here is where I talk a little bit about myself and show off some examples of application development." />
 <meta name="keywords" content="SwiftSwaff, Portfolio, PHP, HTML, CSS, JavaScript, MySQL" />

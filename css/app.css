@@ -281,6 +281,7 @@ main {
 }
 main section {
   width: 100%;
+  margin: 10px 0;
   padding: 15px;
   font-family: "Montserrat", Arial, Helvetica, sans-serif, sans-serif;
   color: white;
@@ -333,6 +334,116 @@ footer {
   height: 100px;
   margin-top: 20px;
   background-color: #140007;
+}
+
+.btn {
+  padding: 10px;
+  border: 1px solid rgba(200, 200, 200, 0.5);
+  background-color: transparent;
+  color: rgba(200, 200, 200, 0.5);
+  font-family: "Lato", sans-serif, sans-serif;
+  text-decoration: none;
+}
+.btn:hover {
+  border-color: rgba(200, 200, 200, 0.8);
+  background-color: rgba(200, 200, 200, 0.1);
+  color: rgba(200, 200, 200, 0.8);
+  font-weight: bold;
+}
+
+.overview-options {
+  margin-top: 30px;
+}
+
+body.countdown {
+  background: white url("/resources/images/countdown-bg.jpeg") no-repeat fixed center/cover;
+}
+body.countdown main {
+  padding: 0;
+  background-color: transparent;
+}
+body.countdown main section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 200px;
+  text-align: center;
+}
+body.countdown main section h1 {
+  display: block;
+  width: 100%;
+  font-size: 2rem;
+  color: black;
+  font-family: "Lato", sans-serif;
+}
+body.countdown main section .c-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 300px;
+  pointer-events: auto;
+}
+@media (min-width: 600px) {
+  body.countdown main section .c-wrapper {
+    width: 600px;
+  }
+}
+body.countdown main section .c-wrapper .c-container {
+  display: inline-block;
+  width: 4rem;
+  margin-bottom: 35px;
+}
+@media (min-width: 600px) and (max-width: 899px) {
+  body.countdown main section .c-wrapper .c-container {
+    width: 6rem;
+  }
+}
+@media (min-width: 900px) {
+  body.countdown main section .c-wrapper .c-container {
+    width: 8rem;
+  }
+}
+body.countdown main section .c-wrapper .c-container > * {
+  display: block;
+  width: 100%;
+}
+body.countdown main section .c-wrapper .c-container label {
+  font-size: 0.9em;
+  color: black;
+}
+@media (min-width: 600px) {
+  body.countdown main section .c-wrapper .c-container label {
+    font-size: 1rem;
+  }
+}
+body.countdown main section .c-wrapper .c-container .c-unit {
+  font-size: 2em;
+  font-weight: bold;
+  color: black;
+}
+@media (min-width: 600px) {
+  body.countdown main section .c-wrapper .c-container .c-unit {
+    font-size: 3rem;
+  }
+}
+
+.overlay {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+.overlay.celebrate-red {
+  display: block;
+  background-color: rgba(255, 0, 0, 0.5);
+}
+.overlay.celebrate-white {
+  display: block;
+  background-color: rgba(255, 255, 255, 0.5);
 }
 
 /*# sourceMappingURL=app.css.map */
