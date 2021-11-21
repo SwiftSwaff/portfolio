@@ -25,8 +25,8 @@ ob_end_clean();
         <?php include getenv("DOCUMENT_ROOT") . '/components/imports.php'; ?>
     </head>
     <body <?php echo $class ?>>
-        <?php include getenv("DOCUMENT_ROOT") . '/components/header.php'; ?>
+        <?php if ($slug != "projects") { include getenv("DOCUMENT_ROOT") . '/components/header.php'; } ?>
         <?php echo $content; ?>
-        <?php include getenv("DOCUMENT_ROOT") . '/components/footer.php'; ?>
+        <?php if ($slug != "projects") { include getenv("DOCUMENT_ROOT") . '/components/footer.php'; } ?>
     </body>
 </html>

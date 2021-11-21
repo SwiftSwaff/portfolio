@@ -59,14 +59,12 @@ main {
     section {
         width: 100%;
         margin: 10px 0;
-        padding: 15px;
         font-family: $montserrat, sans-serif;
         color: $primary_text_color;
         
         @include for-tablet-portrait-only {
             width: 600px;
             margin: 0 auto;
-            padding: 50px;
         }
         @include for-tablet-landscape-up {
             width: 900px;
@@ -76,7 +74,7 @@ main {
         h1 {
             margin: 25px 0;
             line-height: 30px;
-            font-size: 1rem;
+            font-size: 2rem;
 
             @include for-tablet-portrait-up {
                 font-size: 3rem;
