@@ -18,7 +18,6 @@ if (!defined('IndexAccessed')) {
             <a href='javascript:'>Projects</a>
             <ul class='navbar-dropdown d1'>
                 <li class='navbar-elem'><a href='/overview/countdown'>Countdown</a></li>
-                <li class='navbar-elem'><a href='/overview/pokeapi'>PokeAPI Fun</a></li>
             </ul>
         </li>
     </ul>
