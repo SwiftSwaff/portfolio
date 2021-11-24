@@ -5,7 +5,6 @@ if (!defined('IndexAccessed')) {
 
 $projectRefs = array(
     "countdown" => "countdown.php",
-    "pokeapi"   => "pokeapi.php"
 );
 
 switch ($slug) {
