@@ -6,7 +6,7 @@
         <p>One of my friends even wanted his resume formatted with this template - I was happy to oblige, although it would have been easier if it could be generated with input rather than having to be done manually by me...</p>
         <p>Technologies: HTML5, CSS3 (with SASS)</p>
         <div class="overview-options">
-            <a class="btn" href="https://github.com/SwiftSwaff/cms" target="_blank">Code on Github</a>
+            <a class="btn" href="https://github.com/SwiftSwaff/resume_template" target="_blank">Code on Github</a>
         </div>
     </section>
 </main>
