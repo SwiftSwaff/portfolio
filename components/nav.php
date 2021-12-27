@@ -17,7 +17,10 @@ if (!defined('IndexAccessed')) {
         <li class='navbar-elem'>
             <a href='javascript:'>Projects</a>
             <ul class='navbar-dropdown d1'>
-                <li class='navbar-elem'><a href='/overview/countdown'>Countdown</a></li>
+                <li class='navbar-elem'><a href='/overviews/trading_game'>Trading Game API</a></li>
+                <li class='navbar-elem'><a href='/overviews/custom_cms'>Custom CMS</a></li>
+                <li class='navbar-elem'><a href='/overviews/resume_template'>Resume Template</a></li>
+                <li class='navbar-elem'><a href='/overviews/countdown'>Countdown</a></li>
             </ul>
         </li>
     </ul>

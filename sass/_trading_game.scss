@@ -1,0 +1,34 @@
+body.trading_game {
+    button, input[type='submit'] {
+        padding: 5px;
+    }
+
+    h2 {
+        margin: 20px 0;
+    }
+
+    ul {
+        margin: 20px 0;
+        padding-left: 20px;
+    }
+
+    form {
+        width: 400px;
+        margin-bottom: 40px;
+
+        color: rgba(255,255,255,1);
+
+        * {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+    }
+
+    #api-response {
+        min-height: 300px;
+        margin: 10px 0;
+        color: rgba(255,255,255,1);
+        background-color: rgba(25,25,25,1);
+        border: 1px solid rgba(255,255,255,1);
+    }
+}

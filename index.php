@@ -6,11 +6,12 @@ $path = ltrim($_SERVER['REQUEST_URI'], '/');
 $segments = explode('/', $path);
 
 $slug = strtolower($segments[0]);
-$filename = isset($segments[1]) ? strtolower($segments[1]) : null;
+$dirname = isset($segments[1]) ? strtolower($segments[1]) : null;
+$filename = isset($segments[2]) ? strtolower($segments[2]) : null;
 
 $class = "";
 if ($slug == "projects") {
-    $class = "class='{$filename}'";
+    $class = "class='{$dirname}'";
 }
 
 ob_start();

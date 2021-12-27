@@ -5,40 +5,39 @@ if (!defined('IndexAccessed')) {
 
 $projectRefs = array(
     "countdown" => "countdown.php",
+    "trading_game" => "trading_game.php",
 );
 
+// handle overview and project pages differently as projects may have multiple files associated to each
 switch ($slug) {
     case "":
         include getenv("DOCUMENT_ROOT") . "/components/hero.php";
         include getenv("DOCUMENT_ROOT") . "/pages/home.php";
         break;
-    case "overview":
-        findNestedRoute("overviews", $filename);
+    case "overviews":
+        $dirname.= str_ends_with($dirname, ".php") ? "" : ".php";
+        if (!include(getenv("DOCUMENT_ROOT") . "/pages/overviews/{$dirname}")) {
+            header('HTTP/1.1 404 Not Found');
+            include getenv("DOCUMENT_ROOT") . "/404.html";
+        }
         break;
     case "projects":
-        findNestedRoute("projects", $filename);
+        $page = "";
+        if (!$filename) { // default file is same as the project name
+            $page = "/pages/projects/{$dirname}/{$dirname}.php";
+        }
+        else { // referring to different php file within project folder
+            $page = "/pages/projects/{$dirname}/{$filename}";
+        }
+
+        if (!include(getenv("DOCUMENT_ROOT") . $page)) {
+            header('HTTP/1.1 404 Not Found');
+            include getenv("DOCUMENT_ROOT") . "/404.html";
+        }
         break;
     default:
         header('HTTP/1.1 404 Not Found');
         include getenv("DOCUMENT_ROOT") . "/404.html";
         break;
-}
-
-function findNestedRoute($slug, $param) {
-    global $projectRefs;
-    foreach ($projectRefs as $name => $file) {
-        if ($param == $name) {
-            if ($slug == "projects") {
-                include getenv("DOCUMENT_ROOT") . "/pages/{$slug}/{$name}/{$file}";
-            }
-            else if ($slug == "overviews") {
-                include getenv("DOCUMENT_ROOT") . "/pages/{$slug}/{$file}";
-            }
-            
-            return;
-        }
-    }
-    header('HTTP/1.1 404 Not Found');
-    include getenv("DOCUMENT_ROOT") . "/404.html";
 }
 ?>
