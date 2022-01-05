@@ -20,7 +20,8 @@ $content = ob_get_contents();
 ob_end_clean();
 ?>
 
-<html>
+<!DOCTYPE html>
+<html lang="en">
     <head>
         <?php include getenv("DOCUMENT_ROOT") . '/components/meta.php'; ?>
         <?php include getenv("DOCUMENT_ROOT") . '/components/imports.php'; ?>
