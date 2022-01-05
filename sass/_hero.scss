@@ -1,10 +1,17 @@
+.no-js .hero-image, .no-webp .hero-image {
+    background-image: linear-gradient($hero_img_overlay_color, $hero_img_overlay_color), url("../resources/images/hero-image.jpeg");
+}
+
+.webp .hero-image {
+    background-image: linear-gradient($hero_img_overlay_color, $hero_img_overlay_color), url("../resources/images/hero-image.webp");
+}
+
 .hero-image {
     flex: 0 0 100%;
     position: relative;
     display: block;
     height: 45%;
     margin-top: 60px;
-    background-image: linear-gradient($hero_img_overlay_color, $hero_img_overlay_color), url("../resources/images/hero-image.jpeg");
     background-position: 30%;
     background-repeat: no-repeat;
     background-size: cover;

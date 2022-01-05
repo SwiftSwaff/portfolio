@@ -10,8 +10,10 @@ $fontURL = "https://fonts.googleapis.com/css2?"
          . "display=swap";
 ?>
 
+<script>document.documentElement.classList.remove("no-js");</script>
 <script defer src='https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
 <script defer type='text/javascript' src='/js/app.js'></script>
+<script defer type='text/javascript' src='/js/modernizr-custom.js'></script>
 <link rel='preconnect' href='https://fonts.gstatic.com' crossorigin/>
 <link rel='stylesheet' rel='preload' as='style' href='<?php echo $fontURL ?>'/>
 <link rel='stylesheet' rel='stylesheet' href='<?php echo $fontURL ?>' media='print' onload="this.media='all'"/>

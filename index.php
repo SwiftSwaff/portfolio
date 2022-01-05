@@ -21,7 +21,7 @@ ob_end_clean();
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="no-js">
     <head>
         <?php include getenv("DOCUMENT_ROOT") . '/components/meta.php'; ?>
         <?php include getenv("DOCUMENT_ROOT") . '/components/imports.php'; ?>
