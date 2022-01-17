@@ -20,6 +20,6 @@
                 <span id="c-seconds" class="c-unit">0</span>
             </div>
         </div>
-        <script type='text/javascript' src='/js/countdown.js'></script>
+        <script defer type='text/javascript' src='/js/countdown.js'></script>
     </section>
 </main>
