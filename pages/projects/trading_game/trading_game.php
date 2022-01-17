@@ -41,6 +41,6 @@
             </form>
         </div>
         <pre id='api-response'></pre>
-        <script type='text/javascript' src='/js/trading_game.js'></script>
+        <script defer type='text/javascript' src='/js/trading_game.js'></script>
     </section>
 </main>
