@@ -13,7 +13,7 @@ $class = "";
 if ($slug == "projects") {
     $class = "class='{$dirname}'";
 }
-
+//aaa
 ob_start();
 include getenv("DOCUMENT_ROOT") . '/router.php';
 $content = ob_get_contents();
