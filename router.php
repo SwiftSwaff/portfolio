@@ -3,7 +3,6 @@ if (!defined('IndexAccessed')) {
     die('Direct access not permitted');
 }
 
-// project refs
 $projectRefs = array(
     "countdown" => "countdown.php",
     "trading_game" => "trading_game.php",
