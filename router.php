@@ -12,8 +12,7 @@ $projectRefs = array(
     "trading_game" => "trading_game.php",
 );
 
-// another thing
-// different comment
+//this is another comment
 // handle overview and project pages differently as projects may have multiple files associated to each
 switch ($slug) {
     case "":
