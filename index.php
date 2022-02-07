@@ -1,6 +1,6 @@
 <?php
 define('IndexAccessed', true);
-
+//test5
 // break URI up into segments for router & components
 $path = ltrim($_SERVER['REQUEST_URI'], '/');
 $segments = explode('/', $path);
