@@ -4,6 +4,7 @@ if (!defined('IndexAccessed')) {
 }
 //test
 //test2
+//test3
 $projectRefs = array(
     "countdown" => "countdown.php",
     "trading_game" => "trading_game.php",
