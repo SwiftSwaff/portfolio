@@ -8,7 +8,9 @@ $projectRefs = array(
     "countdown" => "countdown.php",
     "trading_game" => "trading_game.php",
 );
-
+//test1
+//test2
+//test3
 // handle overview and project pages differently as projects may have multiple files associated to each
 switch ($slug) {
     case "":
