@@ -10,6 +10,7 @@ $projectRefs = array(
 );
 //test1
 //test2
+//test3
 // handle overview and project pages differently as projects may have multiple files associated to each
 switch ($slug) {
     case "":
